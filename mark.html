@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sidebar</title>
+</head>
+   <meta charset="UTF-8">
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<meta name="theme-color" content="red">
+
+
+
+
+<body>
+
+<div class="side"  id="sidebar">
+ <span  class="imga"  ><img src="moon.png"  id="icon"width="35px" id="I" > </span>
+  
+	<button  onclick="w3_close()" class="clo">&times;</button>
+	
+	 <br><br>
+	<a href="index.html">about me</a>
+	<a href="#">contact me</a>
+	<a href="#">address me</a>
+</div>
+
+
+
+
+<div  class="OPEN">
+    
+    
+   <span  class="imga2"><img width="35px" src="moon.png" id="icon2" alt=""></img></span>
+
+    
+    
+<button  onclick="w3_open()" style="font-size:30px;cursor:pointer" >&#9776;</button>
+        
+</div>
+
+    <script>
+        
+function w3_open()
+{
+document.getElementById("sidebar").style.width="170px";
+
+document.getElementById("sidebar").style.height="100%";
+
+}
+function w3_close()
+{
+document.getElementById("sidebar").style.width="0px";
+}
+
+
+
+
+<!-- imga  -->
+
+var icon =document.getElementById('icon');
+    
+    icon.onclick=function (){
+        
+       document.body.classList.toggle("dark-theme");
+        
+       if(document.body.classList.contains("dark-theme"))
+      {
+      
+      icon.src="sun.png";
+      icon2.src="sun.png";
+      }
+      else
+{
+icon.src="moon.png";
+<!--  -->
+icon2.src="moon.png";
+}
+        
+    }
+
+
+<!-- imga2 -->
+
+var icon2 =document.getElementById('icon2');
+    
+    icon2.onclick=function (){
+        
+       document.body.classList.toggle("dark-theme");
+        
+        
+        
+        if(document.body.classList.contains("dark-theme"))
+      {
+      
+      icon.src="sun.png";
+      icon2.src="sun.png";
+      }
+      else
+{
+icon.src="moon.png";
+<!--  -->
+icon2.src="moon.png";
+
+}
+        
+        
+       } 
+                                        
+</script>
